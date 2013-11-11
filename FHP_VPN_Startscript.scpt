@@ -35,7 +35,6 @@ end is_running
 set safRunning to is_running("Cisco AnyConnect Secure Mobility Client")
 -- check if Cisco is running
 if safRunning then
-	-- 
 	tell application "Cisco AnyConnect Secure Mobility Client" to activate
 	tell application "System Events"
 		keystroke "asa.fh-potsdam.de:81"
