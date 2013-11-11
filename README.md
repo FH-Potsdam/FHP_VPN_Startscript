@@ -1,4 +1,4 @@
 FHP_VPN_Startscript
 ===================
 
-Script zur Vereinfachung der Benutzung des FHP VPN-Zugangs
+Script to simplify VPN usage on campus
