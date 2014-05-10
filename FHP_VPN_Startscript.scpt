@@ -41,12 +41,12 @@ if safRunning then
 		keystroke "asa.fh-potsdam.de:81"
 		key code 52
 		
-		set passRequested to 0
-		repeat while passRequested is 0
+		set passReq to 0
+		repeat while passReq is 0
 			if exists window "Cisco AnyConnect | asa.fh-potsdam.de:81" of process "Cisco AnyConnect Secure Mobility Client" then
 				keystroke txtToTrans
 				key code 52
-				set passRequested to 1
+				set passReq to 1
 			end if
 		end repeat
 	end tell
