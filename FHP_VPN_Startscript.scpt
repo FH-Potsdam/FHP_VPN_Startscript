@@ -53,10 +53,6 @@ if safRunning then
 else -- if not running, no need to adjust the portnumber
 	tell application "Cisco AnyConnect Secure Mobility Client" to activate
 	tell application "System Events"
-		delay 0.5
-		keystroke "asa.fh-potsdam.de:81"
-		key code 52
-		
 		set passRequested to 0
 		repeat while passRequested is 0
 			if exists window "Cisco AnyConnect | asa.fh-potsdam.de:81" of process "Cisco AnyConnect Secure Mobility Client" then
