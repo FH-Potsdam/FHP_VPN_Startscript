@@ -5,10 +5,10 @@ Script to simplify VPN usage on campus
 
 Pretty simple and rough code, hacked together at a first start with apple script.
 
-Usage:
+Benutzung:
 
-Important: Activate "Start VPN when AnyConnect is started"
+Wichtig: Atkviere "Start VPN when AnyConnect is started" in AnyConnect und aktiviere das Script unter OSX Settings -> Sicherheit -> Bedienungshilfen  
 
-1. Start the Script
-2. Enter your Password (Only needed one time)
+1. Starte das Script
+2. Einmalige Passworteingabe
 3. let the magic happen ;)
