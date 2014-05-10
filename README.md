@@ -1,5 +1,4 @@
 # FHP_VPN_Startscript #
-===================
 
 Script to simplify VPN usage on campus
 
@@ -14,7 +13,8 @@ Wichtig: Aktviere "Start VPN when AnyConnect is started" in AnyConnect und schal
 3. let the magic happen ;)
 
 
-## Automatisierung: (funktioniert nur wenn man gerade im WLAN der der FHP ist.) ##
+## Automatisierung: ##
+(funktioniert nur wenn man gerade im WLAN der der FHP ist.)
 
 Benötigt: http://www.controlplaneapp.com/ 
 1. Starte das Programm
