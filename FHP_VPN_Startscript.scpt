@@ -37,17 +37,33 @@ set safRunning to is_running("Cisco AnyConnect Secure Mobility Client")
 if safRunning then
 	tell application "Cisco AnyConnect Secure Mobility Client" to activate
 	tell application "System Events"
+		
 		keystroke "asa.fh-potsdam.de:81"
 		key code 52
-		delay 1
-		keystroke txtToTrans
-		key code 52
+		
+		set passRequested to 0
+		repeat while passRequested is 0
+			if exists window "Cisco AnyConnect | asa.fh-potsdam.de:81" of process "Cisco AnyConnect Secure Mobility Client" then
+				keystroke txtToTrans
+				key code 52
+				set passRequested to 1
+			end if
+		end repeat
 	end tell
 else -- if not running, no need to adjust the portnumber
 	tell application "Cisco AnyConnect Secure Mobility Client" to activate
-	delay 1
 	tell application "System Events"
-		keystroke txtToTrans
+		delay 0.5
+		keystroke "asa.fh-potsdam.de:81"
 		key code 52
+		
+		set passRequested to 0
+		repeat while passRequested is 0
+			if exists window "Cisco AnyConnect | asa.fh-potsdam.de:81" of process "Cisco AnyConnect Secure Mobility Client" then
+				keystroke txtToTrans
+				key code 52
+				set passRequested to 1
+			end if
+		end repeat
 	end tell
 end if
